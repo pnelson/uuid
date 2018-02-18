@@ -12,6 +12,9 @@ const ByteSize = 16
 // Format is the UUIDv4 format specifier.
 const Format = "%08x-%04x-%04x-%04x-%08x"
 
+// Zero is the UUIDv4 zero value.
+const Zero = "00000000-0000-0000-0000-000000000000"
+
 // New returns a new UUIDv4.
 func New() string {
 	b := make([]byte, ByteSize)
